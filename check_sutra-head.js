@@ -20,7 +20,7 @@ var docheck = function(arr) {
 		if(m1 / 1 > preSutraId / 1) {
 			multipleOfTen = true;
 		}else if(m1 < preSutraId && multipleOfTen == false) {
-			console.log("sutra sort wrong:", _fn+"("+line+")", "J"+m1+" is worng with "+prefn, preline, "J"+preSutraId);
+			console.log("sutra sort wrong:", _fn+"("+line+")", "J"+m1+" is worng with "+prefn+"("+preline+")", "J"+preSutraId);
 		}
 		preSutraId = m1;
 		prefn = _fn;
@@ -34,7 +34,7 @@ var docheck = function(arr) {
 
 	arr.replace(headN, function(m, m1) {   //check head toc
 		if(m1 - preHeadNum > 1){
-			console.log("head n wrong:", _fn, line, m1);
+			console.log("head n wrong:", _fn+"("+line+")", m1);
 		}
 		preHeadNum = m1;
 //		console.log("head:", _fn, line, m1);
